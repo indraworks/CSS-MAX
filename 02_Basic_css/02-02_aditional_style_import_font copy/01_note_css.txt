@@ -1,0 +1,26 @@
+////01.note //////////
+disini kita akan buat css dari external ini ditulis di 
+bagian head utk buat linknya ,nama file adalah style.css 
+selector tetap sama masih di element kita blum buat class
+nah utk proeprty font-family kita bisa import dari 'extenrmal
+yatu dari gogole fonts :
+misalkan saya mau ambil roboto font :
+https://fonts.google.com/specimen/Roboto
+ada dua cara dgn cara link 
+jika link :
+paste di bagian head diatas title :
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+jika di import maka import di css file:
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+slah import 
+pastikan kasih tambahan diselector utk porperty font-family:
+font-family: 'Roboto', sans-serif;
+
+nah kita coba yg ke =-2 
+
+

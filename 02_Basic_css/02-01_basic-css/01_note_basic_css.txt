@@ -1,0 +1,20 @@
+////01.basic syntax //////////
+
+syntac css:
+selector { 
+    property:value // pasangan propeprty:value disebut declarations 
+
+}
+
+pasangan selector {isi} disebut rule 
+nah contoh:
+h1 { 
+    color:blue  
+}
+//jadi h1 disebut selector ,color adalah property h1 dan blue adalah value yg diberikan 
+//pada protperty dari h1( seletor) 
+
+
+/////02.                //////
+
+

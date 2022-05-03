@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+section {
+  background: #f38888;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  /* jangan lupa diberi tanda petik  */
+}
