@@ -1,0 +1,34 @@
+
+
+jadi gini jika kita melhat mis ada element p, atau h1 dll
+element ya 
+nah mis speeti berikut :
+html:
+<h1>ini content </h1>
+
+h1 {
+  background:green;
+  color:white;
+  padding:1rem
+  margin:
+
+}
+
+|  |   |  |
+|  |   |  |
+|  |   |  |
+|  |   |  | 
+ m b p   c 
+
+ini secara harafiah diatas anggap garis adalah kotak2 
+nah content adalah tulisanya  yg ada di halaman di awakili tlisan c 
+nah jika ada background maka warna arsiran akan tutup kotak c 
+contentnya sebesar kontent,nah jika ada width:2px height 2px 
+maka besar content akan dilijatkan oleh background atau arsiran 
+nah jika ada padding maka besar padding adalah jarak ketepi border 
+maka yg diingat arsiran utk content itu batasannya sampai padding 
+stlahnya ada border dgn tebal widthnya 
+nah stlah border ada jarak dgn sibling element lain 
+namanya disebut margin 
+
+ 

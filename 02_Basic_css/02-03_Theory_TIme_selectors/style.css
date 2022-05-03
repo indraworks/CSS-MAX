@@ -11,4 +11,14 @@
   font-weight: bold;
   font-size: 2rem;
   letter-spacing: 3rem;
+  padding: 25px;
+  border: 10px solid black;
+  margin: 12px;
 }
+/* kalau mau sorot di inspect ,
+
+sorot di htmlnya dgn class section-title 
+nanti akan terlihat batasan2 dari box stylenya 
+utk semua proeprty dari padding,border,content,margin
+
+*/
