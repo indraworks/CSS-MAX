@@ -1,0 +1,43 @@
+jadi sebuah element itu apa ?
+eleement adalah tag dari html yg trdir atas 
+content,content itu apa adalah value dari element bisa berupa tulisan 
+atau gambar /text yg punya property2 dan value yg diset nnti oeleh selector.
+
+nah diskliling content ada space namanya padding ,nah ini disebut internal
+setelah padding space ini diluarnya adalah border
+border masih dalam element dimana adalah batas terluar dari element 
+nah diatas border ada margin ini adalah space antara 
+element ini dgn eleemnt tetangga!
+jadi defaultnya yg namanya utk semua element displaynya adalah box!
+sperti diatas !
+coba alt L+O di index.htnl 
+sorot bagian h1 element terlihat 
+h1 {
+    color: white;
+    font-family: "Anton", sans-serif;
+    font-size: 48px;
+    margin: 20px;
+}
+nah coba buat margin:20px sorot lagi terlihat bahwa ada space trluar dari 
+eleement h1 diatas sbsar 20px 
+
+nah utk latihan biar tahu 
+coba tambahkan padding  20px 
+kasih border 5px 
+pada element h1 di id id="product-overview" 
+yg kta edit atau atur propertyny di product-overview 
+sehinggga yg berubah hanya h1 di id product=overview saja tidak h1 yg lain 
+kena imbas:
+#product-overview {
+    padding:20px;
+    border:5px;
+    margin:20px 
+
+}
+
+nah inspect, cara sorot di elements -> pada sections id="product-ovrview"
+terlihat besaran space 20px diatas content 
+kmudian tambahkan border 5px , lihat gambar box dibawah element (sblha kanan panel )
+maka terlihat diatas padding ada garis persegi sebesar 5px 
+nah atasnya adalah luaran dari element ,kita atur jarak dgn eleemnt tetangaga margin =20px
+sorot lagi di elemet panel id= product ovrview trlihat ada space dari tepi halaman page sbgasar 20px  mengelilingi element ini.

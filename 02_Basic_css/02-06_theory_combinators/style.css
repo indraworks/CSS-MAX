@@ -1,0 +1,23 @@
+/* kita buat didalam class adjacent-sibling + utk  h2+p */
+.adjacent-sibling h2 + p {
+  color: red;
+}
+
+.general-sibling h2 ~ p {
+  color: blueviolet;
+}
+
+.child-sibling div > p {
+  color: green;
+}
+
+div p {
+  color: orange;
+}
+/* jangan masukan class sbgai disebalhkiri kalau div ya div aja jangan campur 
+   sepertin ini 
+   descendat-sibling div p { } //ini salah ini artinya  dibawah klass div kena smua  p jug akena smua 
+   asal dia dibawah div 
+   jika targetnya p ,sebenar langsung saja div p {} ATAU .descendant-
+
+*/

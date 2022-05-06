@@ -1,0 +1,16 @@
+jadi urutan kekuatan jika sbuah selector punya kedudukan 
+yg sama dan juga jika dia descendant maka urutan2 sipa yg terkuat 
+ygbisa set nilai proerty dan pengaruh dan jadi prioritas maka  :
+
+jadi gini  jika ada sbuah cascadin gselector 
+maka L:multiple ruls bisa di apply pada sbuah element 
+
+specificity itu mmbuat aturan dimana yg terkuat :
+urut dari yg paling kuat:
+1.inline style  > palingkuat
+2.#id selectors
+3.class,:pseudo class, [attribute] selectors
+4.<Tag element> dan ::pseudo-element selectors 
+
+jadi paling lemah no4 utk tag ya semacam selector :* {} ,
+p{} ,h1{} etc tag ya!

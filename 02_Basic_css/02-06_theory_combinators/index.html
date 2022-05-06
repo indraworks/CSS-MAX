@@ -1,6 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
+  <!-- head tempat kita buat meta,title dan juga utk favicon  -->
   <head>
-    <title>Teori COmbinator</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>02-05_Inheritance</title>
+    <!-- kita import favicon yg uda dibuat taruh di olfer ygsama -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
   </head>
+
+  <body>
+    <main>
+      <h1>Adjancent Sibling +</h1>
+      <div class="adjacent-sibling">
+        <h2>Not Applied</h2>
+        <p>yes Applied property red color</p>
+        <p>not applied</p>
+        <h2>Not Applied</h2>
+        <p>applied with red value</p>
+        <h4>Not Applied</h4>
+        <h3>Not Applied</h3>
+        <h2>Not Applied</h2>
+        <p>yes Applied property red color</p>
+      </div>
+      <h1>General Sibling ~</h1>
+      <p>
+        ini smua p(dlm contoh ini tanpa baik itu langsung dari h2 atau tidak
+        urut kena warna merah
+      </p>
+      <div class="general-sibling">
+        <p>not apllied karena diatas h2</p>
+        <h2>Not Applied</h2>
+        <p>yes Applied property blueviolet</p>
+        <p>yes Applied property blueviolet</p>
+        <h2>Not Applied</h2>
+        <p>applied with blueviolet</p>
+        <h4>Not Applied</h4>
+        <h3>Not Applied</h3>
+        <h2>Not Applied</h2>
+        <p>yes Applied property blueviolet</p>
+        <h3>Not Applied</h3>
+        <p>yes Applied property blueviolet</p>
+      </div>
+      <h1>Child-Sibling atau COmbinator CHild</h1>
+      <p>
+        disni child yg 1 step dibawah parent(dirinya) yg value propertynya akan
+        berubah dibawahny dia 2nd step dari parent atau 3rd step dst tidak
+        ngatuh atau sibling sejajar dgn dia tidak ngaruh intinya hanya direct 1
+        step dibawahnya yg prperty nya ter-set/diubah!
+      </p>
+      <div class="child-sibling">
+        <p>berubah warna hijau 1 step dibawah</p>
+        <div>
+          <p>tidak berubah 2 step dibawah</p>
+        </div>
+        <div>
+          <div>
+            <h3>tidak berubah 3 step dibawah</h3>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>tidak berubah krn tetangga dan 1 step dclass yg beda</h2>
+      </div>
+
+      <div class="descendant-sibling">
+        <p>kena selalu walau 1 tingkat dibawah</p>
+        <p>semua kena asal dibawah wraping div ( descendant)</p>
+        <h3>
+          hello
+          <div>
+            <p>kena selalu walau 2 tingkat dibawah</p>
+          </div>
+        </h3>
+        <div>
+          <div>
+            <p>kena selalu walau tiga tingkat dibawah</p>
+          </div>
+        </div>
+        <p>kena</p>
+        <p>kena2</p>
+      </div>
+    </main>
+  </body>
 </html>

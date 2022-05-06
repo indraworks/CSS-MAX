@@ -1,0 +1,120 @@
+
+jadi kalau kita menggunakan combinator artinya adalah ada lehih minim 2 selector 
+utk kontorl kasih nilai property pada element yg ada 
+misalkan 
+saya mau kasih di h1 under id=product-overview utk besarkan font 
+font-height :19px
+nah yg kena hanya h1 under id=product-overview
+sedangkan h1 yg lain tak akan terpengaruh propertynya 
+nah sekaran ada banyak macam dari combinator 
+apa saja ??jadi ada rule2 di css yg kita ikuti dan patuhi
+
+ada 4 macam combinator ini kita pakai contoh dibawah dgn tanda +,~,>,spasi atau descendand
+urutan :
++ adjacent sibling contoh: div + p {}  // div dalam hal ini sebarang tag ya
+~ general sibling contoh: div ~ p {} 
+> child sibling contoh  div > h1 {} (initinay si div ada wraping ) hanya mneyasar h1 dibawah div (sebarang tingkat)
+<spasi> descendand sibling  contoh  p h1 {} //si p adalah rootnya h1  ( nnyasar hanya 1 tingkat diabwahnya saja)
+
+
+
+nah sekarang pejelsan detail 
++ adjanent siblng dia selevel sama2 selevel selectornya jadi bertentangga dalam 1 parent :
+  efect: yg kena perubahan adalah 2nd dari sibling direct langusng 
+contoh:
+css:
+h2 + p {
+    color:red 
+}
+
+htmlnya:
+<div class="adj-sibling">
+  <h2> Not Applied </h2>
+  <p> yes Applied property red color</p>
+  <p> not applied</p>
+    <h2> Not Applied </h2>
+ <p> applied with red value </p>
+ <h4> Not Applied </h4>
+  <h3> Not Applied </h3>
+   <h2> Not Applied </h2>
+</div>
+jadi yg kena adalah 2nd tetangganya setelah plus itu direcct langsung gak boleh ada sela!
+habis h2 langsung p ,pasti seletor p element ontentnya menjadi berwarna merah 
+
+//GENERAL SIBLING ~ ///
+General-Sibling kalau ini lebh bebas dari adjacent-sibling jadi dari contoh smua p akan kena asal
+dia adalah tetangga sibling gak mesti urut direct no2 stlah h2  urut 3 4 dst yg lainnya smua kena 
+jadi kata sibling ini menujuk kearah bawah setelah dirinya mis hal ini h2 
+h2~p artinya setelah selector h2 tetangga saya smua p kena property ungu-violet///yg terakhir adalah 
+css:
+.general-sibling h2 ~ p {
+  color: blueviolet;
+}
+
+html:
+<div class="general-sibling">
+        <p>not apllied karena diatas h2</p>
+        <h2>Not Applied</h2>
+        <p>yes Applied property blueviolet</p>
+        <p>yes Applied property blueviolet</p>
+        <h2>Not Applied</h2>
+        <p>applied with blueviolet</p>
+        <h4>Not Applied</h4>
+        <h3>Not Applied</h3>
+        <h2>Not Applied</h2>
+        <p>yes Applied property blueviolet</p>
+        <h3>Not Applied</h3>
+        <p>yes Applied property blueviolet</p>
+      </div>
+
+
+///
+
+
+
+
+
+child sibling atau child combinator tanda > 
+ini artinya dibawah root level tingkat pertama saja dari dia declare propertyna yg kena effect akan berubah sesuai property yg diset oleh si parent,dan efect 1 tngkat dibawahnya saja yg berubah!
+contoh:
+css:
+div > p {
+  color:green
+}
+
+html:
+ <div class="child-sibling">
+        <p>berubah warna hijau 1 step dibawah</p>
+        <div>
+          <p>tidak berubah 2 step dibawah</p>
+        </div>
+        <div>
+          <div>
+            <h3>tidak berubah 3 step dibawah</h3>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>tidak berubah krn tetangga dan 1 step dclass yg beda</h2>
+   </div>
+
+
+
+descendad sibling atau descendant combinator <spasi> 
+
+.descendant-sibling div > p {
+  color:orange 
+}
+
+<div class="descendant-sibling> 
+     <div>
+          <h2> tidak kena effect 
+              <div> <p> kena effect   </p>  </div>
+          </h2>
+          <p> kena effect </p>
+          <h4> gak kena effect</h4>
+          <div>
+             <div> gak kena effect </div>
+          </div>
+     </div>
+</div>
