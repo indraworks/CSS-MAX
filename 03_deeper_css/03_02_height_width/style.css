@@ -2,6 +2,7 @@
 
 #product-overview {
   background: #ff1b68;
+  box-sizing: border-box;
 }
 
 .section-title {
@@ -28,8 +29,8 @@ body {
 }
 
 main {
-  height: 75%;
-  width: 75%;
+  height: 250px;
+  width: 350px;
   background: aquamarine;
 }
 #product-overview > h1 {
@@ -52,6 +53,13 @@ dan niai dibawah ini
   nah nilai orange sndiri adalah 80% dari besaran dari html 
   nah html sndir adalah 1 window krn kita ambil 100% coba kalau kita ambil html 75% SMUA AKAN RELATIVE BERUBAH ANAK2nya 
   ikut dari html trus ubah kebawah ....( tag) 
+
+nah cara cek ke inspex klik tombol pada kaanan pilih atifkan rules 
+nnti keliatan garis nya  besaran nah benar marin warna biru laut memiliki luasan 
+350 besar * tinggi 250 
+nah si product overview sebesar dari nlai  * 144 tinggi 
+liat warna blue violetnya lebar = 200
+widht atay tinggi 250* 75% = 187
 
 
 

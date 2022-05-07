@@ -53,4 +53,6 @@ pada html traget kita adalah:
 
 </html>
 
-
+nah utk percobab kedua nilainya dirubah nila main aja coba diubah jadi fix mis tinggi 750px 
+lebar 600px nah nnti persentase dibawahya(tag/element) akan ikut berdasarkan besaran fix dari nilai main
+mis #product-overview nilai tinggi  70% artinya 70% dari 750px  dst!
