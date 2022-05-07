@@ -1,0 +1,62 @@
+
+
+////Height dan Width ////
+yg bagian 2 kita focus hanya pada product overviewnya aja dibuat 
+hegithnya tapi lebwar width dibuat 100% ,
+NAH HAL YG PALING PENTING ADALAH KALAU KITA SET DEFAULT UKT HIGHT DAN WIDHT INI 
+DIA AKAN IKUT HITUNG DARI PADDING(jika ada padding) dan border jika ada border
+WALAUPUN NNTI HITUNGANYA KITA MIS  height:528px; INI DI CONTENT YG DIHITUNG 
+TAPI PADA PENAMPAKANYA DI WINDOW /PAGE DIA LEBIH BESAR KARENA PASTI AKAN DIGABUNG DGN 
+PADDING BOTTOM +PADDING TOP DAN JUGA JIKA ADA BORDER AKAn DITAMBAHKAN JADI BORDERTOP DAN BRODER BOTTOM
+NAH SUPAYA KALAU KITA MAU HANYA DI CONENT SAJA HITUNGANNYA MAKA KITA SET DGN :
+
+box-sizing:border-box; //jika semua ikut dihitung utk tinngi nya pading +border 
+                        //jadi nilai TOTAL 528 itu INCLUDE SAMA PADING +BORDER 
+                        //hasil dari TOTAL sd pading+ border
+                        //nah conba inspect pada content kotak bawah dielement panel kanan
+                        //nilai height tinggi adalah 528-30 ( total pading top-botom + broder-top-botom)
+                        //tinggi pada ganbar kotak adalah height = 498
+                        //nah warna backgroun akan tuutup sampai nilai 528 utk tingginya ( sd border)
+                        //sperti tampak pada window page di html 
+
+                        
+box-sizing:content-box; //nah jika  utk conent box maka itunganya 528 itu dimulai dari content
+                        //nah warna background merah akan tutup juga pading dan border 
+                        //jadi nlai boxnya smua atau warna backgroun akan tutup utk tinggi 
+                        //menjadi 528+30 jadi 558 jadi luas arsiran box utk tinggi width adalah 558 
+                        //seperti tampak pada widnow /page dihtml 
+
+pada css:
+
+
+#product-overview  { 
+    background:#ff1b68;
+    height:528px;
+    width:100%;
+    padding:10px;
+    border: 5px solid black;
+    box-sizing:content-box;
+}
+
+
+
+pada html traget kita adalah:
+
+<DOCTYPE html>
+<html >
+  <head>
+  <title> Widht and Height</title>
+   </head>
+   <body>
+     
+    <main>
+      <section id="product-overview">
+      <h1 >Get Freedom you deserve
+      </h1></section>
+  
+</html>
+////COBA INSPECT //////
+sorot pada content sebalah kanan kotak dibawha ukt content dia akan sama 
+yaitu nilainya : 964(width ) * 528px( height)  nah 30 adaah tambahan border -top//botom+ pading top/botom
+nah 15+15 = 30 jadi terlihat warnanya background nutup smua pading +border jika kita ada pading+border (valunya)
+
