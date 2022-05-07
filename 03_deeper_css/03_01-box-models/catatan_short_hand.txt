@@ -1,0 +1,54 @@
+utk shorthnad misal 
+margin-left:x px 
+margin-right: x px
+margin-botton:x px 
+margin-top:x px kita bisa singkat 
+
+1) 4 Property value
+misal utk 4 property value dia searah jarum jam:
+top:4px right:10px botom:4px left:10px
+p { 
+    margin:
+}
+
+2) 3 property value
+karna masalah margin colapse ada pada btom dan top maka di bisa buat 3 property value
+
+top right/left botom  jadi asumsi utk kanan kri sama ,
+yg berubah karena masakah colapse adalah top bottom
+
+p {
+    margin:12px 5px 9px;
+}
+
+3) 2 property 
+   top/botom right/left 
+
+   p {
+       margin:7px 8px;
+   }
+
+4) 1 buah propoerty value :
+   //1 buah nilai mewakili semua top,botm.right,left 
+
+   p {
+       margin: 8px //smua 4 nilai adalah 8px
+   }
+
+
+////HEIGHT & WIDTH /////
+pada box model width dan hegiht akan bersesuaian dgn tinggi dari content 
+kalau tidak diset 
+dan kalau menggunakan persentage % maka percentage tesebut merupakan relative dari parent tag/
+parent eleementnya 
+jadi gak bisa nilai % berdiri sendiri utk itu kalau smua mau persentage % maka ujung2nya dia mengarah pada rpoot palingatas jika tidak ada 1pun yg nilai parent element/tag nya menunjukan nilai absoloutte
+sebgai caontoh dibawah ini masing2 element pake % maka akan terus menerus keatas smpai pada level window/level page element yaitu html ! htmlnya diberi juga % mis 100% beratti cover smua window 
+contoh smua pake % maka bermuara pada html ( root element paling atas)
+
+<DOCTYPE hmtl> 
+<html>
+     <head>
+            <title> tag % widht hegiht eleement/>
+     </head>
+
+</html>

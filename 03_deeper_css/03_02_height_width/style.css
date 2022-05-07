@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+#product-overview {
+  background: #ff1b68;
+}
+
+.section-title {
+  color: #2ddf5c;
+}
+
+h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 48px;
+}
+
+html {
+  /* bsar 1 window layar*/
+  height: 70%;
+  width: 70%;
+  background: pink;
+}
+
+body {
+  height: 80%;
+  width: 80%;
+  background: orange;
+}
+
+main {
+  height: 75%;
+  width: 75%;
+  background: aquamarine;
+}
+#product-overview > h1 {
+  height: 55%;
+  width: 75%;
+  background: blueviolet;
+}
+
+/* h1 {
+  font-family: sans-serif;
+} */
+/*
+mati kita bedah 
+nah terilihat dari prodyct-overview h1 dimana h1 tinggina 
+sama dengan tinggi product overbiew krn memamng dlm 1 element 
+dan niai dibawah ini 
+ height: 75%; adalah dari besar height  main element
+  width: 75%; adalah dari besar widht main element
+  dimana main (boru laut) element saat itu bernilai 75% dari body( orange)
+  nah nilai orange sndiri adalah 80% dari besaran dari html 
+  nah html sndir adalah 1 window krn kita ambil 100% coba kalau kita ambil html 75% SMUA AKAN RELATIVE BERUBAH ANAK2nya 
+  ikut dari html trus ubah kebawah ....( tag) 
+
+
+
+*/

@@ -41,3 +41,30 @@ kmudian tambahkan border 5px , lihat gambar box dibawah element (sblha kanan pan
 maka terlihat diatas padding ada garis persegi sebesar 5px 
 nah atasnya adalah luaran dari element ,kita atur jarak dgn eleemnt tetangaga margin =20px
 sorot lagi di elemet panel id= product ovrview trlihat ada space dari tepi halaman page sbgasar 20px  mengelilingi element ini.
+
+////// MARGIN COLAPSING /////
+misalkan ada 2 buah element coba kita copy aja yg #produt-overview" selector 
+kita paste kit abuat juga di htmlnya #produt-overview2" nah kit abuat yg bawah marginnya 40px 
+kan yg original 20 px nnti lihat utk dibawah margin di #Product-overview pada margin bottom 
+sorot di inpsect element 
+nah liaht yg besar marginnya disini margin product -overivew2 dia adalah pemenangnya 
+ini defaultnya 
+coba sorot product-overivew margin di ada 20px ok gak masalah 
+nah pada saat kita sorot element product overview2 
+pada margin-top ada 40px nah tapi dia ambil sampai batas border-botom product-overview 
+jadi si product-overview tak ada margin bottom karena dioverlap oleh product-overivew2 sbsar 40px
+NAH INI SUDAH ATURANYA SI CSS utk margin-bottom atau margin-top !
+utk itu kita mesti arange dari margin-botom dan margin-topmya sbb defaultnya jika ada 2 margin 
+dari eleemnt yg berbeda yg memang adalah yg marginnya paling besar nilainya mengoverlap margin tetangganya 
+coba aja kita span di htmlnya utk pastikan kiri dan kanan overlap apa tidak??
+
+ nah kita buat utk samping kiri kanan margin righ left ini gak ngefek dia memang membaginya dgn 
+ margin utk product-overivew1 dan margin-overivew2 tetap sama yaitu 20 dan 40 px gak overlap !
+ jadi overlap berlaku pada margin bottom dan margin top
+
+ ///BODY WHITE SPACING ////
+ pada eleement body kita bisa liat defaultnya dari css-html adalah :8px
+ utk itu kita bisa reseting body element dengan  
+ body { 
+     margin:0 px; //sebab defaultnya ada 8 px sekliling window
+ }

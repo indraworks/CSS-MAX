@@ -1,0 +1,56 @@
+
+
+////Height dan Width ////
+secara utk smua eelment defaultnya dia display box nah utk 
+supaya dia adat tinggi dan widht sbuah elellment maka kita akah pasanng property & valueny abuat
+pada element mis width:10px; height:12 px;
+nah kita bisa menggunakan persentase % .,tetepi utk presentase dia persentagenya merujuk pada 
+tag/element yg wraping pada element yg sekarang kita beri nilai % persentage ,
+mis 70% tingginya maka acuanya dari nilai tag/element yg wraping dirinya saat ini 
+jika tidak smua terus menggunakan  persentase maka ujung2nya  akan trus ke tag2 parent dan akan sampaipada tag 
+html dimana merupakan rooot /window 
+contoh:(jika semua dgn %) 
+
+pada css:
+
+html {
+    /* bsar 1 window layar*/
+    height:100%;
+    width:100%;
+    background:pink;
+
+}
+
+body {
+    height:80%;
+    width:80%
+    background:orange;
+}
+
+main {
+    height:75%;
+    width:75%;
+}
+#product-overview > h1 { 
+    height:75%;
+    width:75%;
+}
+
+pada html traget kita adalah:
+
+<DOCTYPE html>
+<html >
+  <head>
+  <title> Widht and Height</title>
+   </head>
+   <body>
+     
+    <main>
+      <section id="product-overview">
+      <h1 >Get Freedom you deserve
+      </h1></section>
+  
+
+</html>
+
+
