@@ -26,6 +26,17 @@ box-sizing:content-box; //nah jika  utk conent box maka itunganya 528 itu dimula
                         //menjadi 528+30 jadi 558 jadi luas arsiran box utk tinggi width adalah 558 
                         //seperti tampak pada widnow /page dihtml 
 
+NAH SUPAYA SEMUANYA ELEMENT KITA RESET SUPAYA JADI BORDER-BOX maka 
+yg kita lakukan adalah menggunakan universal selector kalau di bagian body gak bsa gak  ngefek 
+yaitu:
+* {
+  box-sizing:border-box;
+}
+ini akan selalu kita gunakan nntinya jika kita buat halaman page biar kita set sesuai dgn hitungan yg benar
+dari nilai yg diberikan dan view element yg tampak pada halaman page.
+
+
+
 pada css:
 
 
