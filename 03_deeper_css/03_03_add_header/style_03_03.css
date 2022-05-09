@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+#product-overview {
+  background: #ff1b68;
+  height: 528px;
+  width: 100%;
+  padding: 10px;
+  border: 5px solid black;
+}
+
+.section-title {
+  color: #2ddf5c;
+}
+
+h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 48px;
+}
+
+.main-header {
+  background: #2ddf5c;
+  width: 100%;
+  padding: 8px 16px;
+}
+.main-header > div {
+  display: inline-block;
+  /* buat supaya ditengah2 arah vertical content vertical_align:middle */
+  vertical-align: middle;
+}
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 90px);
+  text-align: right;
+  vertical-align: middle;
+}
+
+.main-header__brand {
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  color: #0e4f1f;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0px 16px;
+}
+
+.main-nav__item > a {
+  text-decoration: none;
+  color: #0e4f1f;
+}
+.main-nav__items {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  list-style: none;
+}

@@ -1,0 +1,105 @@
+
+
+//apa yg akan ki tabuat 
+nah karena ini manual jadi gak pake flex 
+kit aakan tambah header ,kmudia dalam headaer ada nav 
+nah dalam nav ada yg namanya ul ( uintendend list) ada namanya 
+li ( list item ) masing2 list item ini kit aakan buat anchor yaiut link ke page yg lain 
+jadi kalau utk penamaan semacam ini dimulai dari list-item kita akan 
+buat 
+misalkan penamaanya dari nav -->classnya :main-nav 
+                    dibawah wraper nav ada ul kita namain aja classnya -->main-nav__nav-items 
+                    (kata s distu mnunjukan bahwa class ini wraping banyak individe list item )
+                    nah utk element linya kita namakana classnya --> main-nav__nav-item ( karena indiivude)
+                    atau bisa namaynya jadi main-nav__list-item 
+jadi dari hal diatas kita bisa tahu aturan penamaanya ada;ah 
+
+nama-wrapper__nama-childPertama 
+jika dia berupa macam list bisa kita buat utk child pertaman ada s nya dgn kata items 
+utk dibawahnya si child pertaman yg wpraer child dibawahnya banyak item kita buat 
+nama-wrapper__nama-childKeduaTampa"s" 
+nah selain dari ul ol li  maka kita bisa buat semacam bgini :
+nama-wrapper__nama-childPertama__nama-childKedua ( kedua wrapernya adalah chuldPertama dimana bukan elelement ol ul li)
+
+
+////
+
+
+nah point penting dari inline block adalah 
+mis ada wraper didalamnnya ada div content satunyalagi ada temenya /neighboring /adjaent 
+nah utk case ini sperti n=ini :
+   <header class="main-header">
+      <div>
+        <a href="index.html"> uHost </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="packages/index.html">Packages</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="customers/index.html">Customers</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="start-hosting/index.html">Start Hosting</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    saya mau  div dan .main-nav ini inline-block sejajar sama 
+    nah utk div kita tak perlu buat class 
+    cukup dengan combinator > dimana utk atur child 1 tingkat dinawah bedakan sama spasi 
+    yg atur banyak tingkat dibawahnya
+     :
+    .main-header > div {
+        display:inline-block
+    }
+    .main-nav {
+        display:inlne-block 
+        width:100% -48px 
+    }
+
+    nah setlahnya disitu lhat sorot masing2 di inspect utk main-header > div dan  .mmain-nav 
+    terlihat berapa dia ocupied widthnya  
+    kalau kita buat alignment right mentok krn besar .main-nav gak diocupied maximal
+    nah utk itu  kita setting besaran widthnya 
+    yaitu width =100%( besar lebar 1 page) - besarnya div nah liaht di content div (yg isingya a href index.html) 
+    disitu sorot aja panel vambar kotak sorot kontentya  kra2 48 ya udah kurangi aja 100% - 48 px 
+    jadi width = 100% -48px 
+    dengan perintah calc(100% -56px)
+    lha jadi kira2 wilayah dari main-header wpraper yg diocuppied oleh main-nav ya ssegitu sisa dari div
+   nah yg bikin suka muntab kok masih ada space INI MASALAH YG SELLAU ADA PADA INLINE BOX UKT ITU LAT DI 
+   HTMLMYA !!!
+   LIAHT!!!
+   <div>
+        <a href="index.html"> uHost </a>
+      </div> <spassiiiiii.............
+       .....> <nav class="main-nav">
+       nah tu spasi atau white spase itulah yg buat ada muncul 
+       utk itu kita keataskan aja tagnya 
+        <a href="index.html"> uHost </a>
+      </div> <nav class="main-nav">   <----- supaya jangan ada space!!!! 
+
+      nah kalau mau supaya gak ada space tambahkan aja besaran penguranyanya misalkan dari 48pxcontenxt si div 
+      kita tambahkan 8 atau 9 px
+      jadi biar kita ocupeid gak ada ruang space 
+      width = calc(100% - 56px ) cara ini alternative juga bisa !
+
+  DEGAN INI SMOGA PAHAM DAN TIDAK MUNTAAAAB!!!
+
+  nah sekarang kita beri si div yg ada index,html anchor dgn 
+  class = main-header__brand 
+  kita buat text-decoration  = none;
+  font-size:18 px;
+  font-weight:bold;
+
+  color:
+
+nah jika dia besar diambil space jadilah lagi block nah artinya 
+1 line ini kelebihan bisa jadi main-nav terlalu banyak ambil makap 
+pengurangnya dari calc 100% - nilai_dari_brand_content-px 
+kita besarkan nila wilayah brand mis 
+width dari main-nav = calc( 100% - 74) lihat dulu di conent dari brand di inspect stalh dibesarkan 
+
+     

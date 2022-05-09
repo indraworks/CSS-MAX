@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
-#product-overview {
+* {
+  box-sizing: border-box;
+}
+
+/* #product-overview {
   background: #ff1b68;
   height: 528px;
   width: 100%;
   padding: 10px;
   border: 5px solid black;
-  box-sizing: border-box;
 }
 
 .section-title {
@@ -17,4 +20,18 @@ h1 {
   color: white;
   font-family: "Anton", sans-serif;
   font-size: 48px;
+} */
+
+.main-header {
+  width: 100%;
+  background: #2ddf5c;
+  padding: 8px 17px;
 }
+
+/* kita buat css utk header nav ,ul li 
+dimana masing2 class 
+header main-header
+nav class="main-nav" 
+ul class="main-nav__nav-items"
+li class "main-nav__nav-item"
+*/
