@@ -1,0 +1,19 @@
+kit audah pelajari pseudo class dan pseudo element
+nah jika sbuah rule sama dikenakan pada selector 
+maka kita bisa gabungkan selector tersbut dgn "," 
+karena selector2 tersebut menerima rule2 yg sama contoh dibawah ini :
+tampa kita harus tulus ulang lebih efisien :
+
+.main-nav__item a:hover {
+  color: azure;
+}
+.main-nav__item a:active {
+  color: azure;
+}
+
+selector diatas kita bisa gabung dlm 1 group karena punya rule yg sama sbb:
+
+.main-nav__item a:hover,.main-nav__item a:active {
+  color: azure;
+}
+ 
