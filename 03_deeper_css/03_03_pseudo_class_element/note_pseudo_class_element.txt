@@ -1,0 +1,46 @@
+apa itu pseudo? yaitu kita melakkuakan styleing tanpa mmbuat 
+sbuah syntact di html kita mmbuat content, ammbuatnya di sebelum dan sesudah class 
+atau kita mmbuat bagian dari element/content secara partial 
+sebelum /dan sesudah secara partial d dalam sbuah content dalam element 
+biasanya utk kalau class element kita buat si pseudo dgn tanda : 
+dan jikalau dalam baguan partial element kita buat dgn :: ( titk 2 nya 2x) 
+bisa kitaberkan kata :before atau :after atau ::before atau ::after 
+///contoh yg akan kita buat adalah :hover 
+nah ini adalah pseudo bawaan dari css yaitu jika sbua element disorot maka 
+kit abisa berubah kasih nilai propertynya dari sielement berubah 
+
+////PENJELASAN RINCI PSEUDO //artinya semu ,
+ada 2 pseudo - pseudo Class -->adalah mendefinisikan style yg kusus dari sbuah element 
+                               //defines the style of special state of an element
+             - pseudo Element --> mendefinisikan style dari bagian specific /part dari sbuah element 
+
+
+contoh pseudo class  dgn tanda : nama_classnya  nama_pseudonya 
+       pseudo ELement dgn tanda :: nama_elementya nama_pseudonya 
+       nah contoh utk hover 
+       main-nav__item:hover {
+
+       }
+       bisa diliat link pseudo class:
+       https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes 
+
+       utk pseudo element bisa dilihat di :
+
+       https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+
+       For example, ::first-line can be used to change the font of the first line of a paragraph.
+       /* The first line of every <p> element. */
+       p::first-line {
+        color: blue;
+        text-transform: uppercase;
+    }
+
+     syntax:
+     selector::pseudo-element {
+              property: value;
+            }
+
+    jadi utk pseudonya sendiri baik utk element dan class smua sudah disediakan oleh css nya nisa liat di document dan dan  dipraktekan
+    coba utk pseudo element ::before  anda praktekan ada contohnya 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/::before
+    

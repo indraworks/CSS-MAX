@@ -54,10 +54,42 @@ h1 {
 .main-nav__item > a {
   text-decoration: none;
   color: #0e4f1f;
-  font-weight: bold;
 }
 .main-nav__items {
   margin: 0px 0px;
   padding: 0px 0px;
   list-style: none;
 }
+.main-nav__item a::after {
+  /* jgn ada spasi di a:: (benar) salah: a ::  */
+  content: " (Link) "; /* otomatis nnti ada content tulisan link ditiap2 a link! */
+  color: red;
+}
+
+.main-nav__item a:hover {
+  color: azure;
+}
+.main-nav__item a:active {
+  color: azure;
+}
+/* contoh kita mau buat pseudo ekement utk fist letter 
+jadi fisr-letter pseudonya udah disediakan oleh css
+nah propeety  valuenya kita yg setting contoh dibawah ini
+ntar kita hapus jadi utk frst-letter ini kita akan buat 
+hurup awal dari sbuah paragrap menjadi besar dan berwarna putih 
+p::first-letter {
+  font-size:200%;
+  color:white}
+
+*/
+main > p::first-letter {
+  font-size: 40px;
+  color: red;
+}
+
+/* contoh lagi kita mau pake psudo element after di list-item 
+content::after {
+   content:" nama_content/ propertyapa yg diisiakn sbgai contnent  ";
+   property:value etc
+}
+*/
