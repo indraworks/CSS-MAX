@@ -1,0 +1,111 @@
+
+
+////PENGGUNAAN 2nd Class  dalam suatu list-item////
+nah ini dia orang selalu tanya kemapa ada 2nd class ngapain 
+kan sudah cuup dgn 1 class saja bisa handle sengai selector utk atur property calue 
+dan set property value 
+nah sebabnya karena 2nd class dalam element yg sama ini hadir jika element tersebut ada dilist 
+nah misal ada 4 list  kalau kita buat diclass kita mau yg lis item ke -3 saja yg kena dampak 
+propertynya list ke 1,2,4 tidak kena utk itu kita mesti buat 2nd class di list item ke 3 contoh berikut 
+yg supaya paham dan pakenyajuga  :
+
+
+ <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="packages/index.html">Packages</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="customers/index.html">Customers</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="start-hosting/index.html">Start Hosting</a>
+          </li>
+        </ul>
+
+
+nah diatas kita mau yg no 3 aja yg kena dampak maka HARUS wajib bauat 2nd class cara:
+dihtml didelcare disebelah class pertama dgn spasi sbgai jarak  :
+class ="main-nav__item main-nav__item--cta " > 
+//cta disini artinya can/control take action  jadi hanya dia list item 3 ini yg dikenai action 
+//yg lainnya tidak ada 
+//aturan penulisannya memang demikian ada sambunagan dua dot dash bukan underScore 
+nah dicssnya dimana kita mau buat smacam background kotak merah padal link a dan tulisan 
+warna putih dan jika dihover utk list 3 ini background jadi putin 
+
+.main-nav__item--cta a {
+ //kita overwrite pada main-nav__item  a seblumnya kurus yg list imte 3 a //nya di ubah 
+  color:white;
+  background:#ff1b68;
+  padding:8px 16px;
+  border-radius:8px
+}
+
+
+
+
+
+///Border dan font Weight/////
+utk a:active ( pseudo) kita mau tambahkan garis broder dan font 
+pada saat active terlihat ada garis warna putih dibawah link 
+
+
+
+
+
+
+
+
+
+
+
+
+Old:
+apa itu pseudo? yaitu kita melakkuakan styleing tanpa mmbuat 
+sbuah syntact di html kita mmbuat content, ammbuatnya di sebelum dan sesudah class 
+atau kita mmbuat bagian dari element/content secara partial 
+sebelum /dan sesudah secara partial d dalam sbuah content dalam element 
+biasanya utk kalau class element kita buat si pseudo dgn tanda : 
+dan jikalau dalam baguan partial element kita buat dgn :: ( titk 2 nya 2x) 
+bisa kitaberkan kata :before atau :after atau ::before atau ::after 
+///contoh yg akan kita buat adalah :hover 
+nah ini adalah pseudo bawaan dari css yaitu jika sbua element disorot maka 
+kit abisa berubah kasih nilai propertynya dari sielement berubah 
+
+////PENJELASAN RINCI PSEUDO //artinya semu ,
+ada 2 pseudo - pseudo Class -->adalah mendefinisikan style yg kusus dari sbuah element 
+                               //defines the style of special state of an element
+             - pseudo Element --> mendefinisikan style dari bagian specific /part dari sbuah element 
+
+
+contoh pseudo class  dgn tanda : nama_classnya  nama_pseudonya 
+       pseudo ELement dgn tanda :: nama_elementya nama_pseudonya 
+       nah contoh utk hover 
+       main-nav__item:hover {
+
+       }
+       bisa diliat link pseudo class:
+       https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes 
+
+       utk pseudo element bisa dilihat di :
+
+       https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+
+       For example, ::first-line can be used to change the font of the first line of a paragraph.
+       /* The first line of every <p> element. */
+       p::first-line {
+        color: blue;
+        text-transform: uppercase;
+    }
+
+     syntax:
+     selector::pseudo-element {
+              property: value;
+            }
+
+    jadi utk pseudonya sendiri baik utk element dan class smua sudah disediakan oleh css nya nisa liat di document dan dan  dipraktekan
+    coba utk pseudo element ::before  anda praktekan ada contohnya 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/::before
+
+    contoh2 buat latihan :
+    https://www.w3.org/wiki/CSS/Selectors/pseudo-elements/:first-letter#:~:text=The%20%3A%3Afirst%2Dletter%20pseudo,inline%20tables)%20on%20its%20line.
+    

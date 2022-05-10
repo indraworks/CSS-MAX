@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+#product-overview {
+  background: #ff1b68;
+  height: 528px;
+  width: 100%;
+  padding: 10px;
+  border: 5px solid black;
+}
+
+.section-title {
+  color: #2ddf5c;
+}
+
+h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 48px;
+}
+
+.main-header {
+  background: #2ddf5c;
+  width: 100%;
+  padding: 8px 16px;
+}
+.main-header > div {
+  display: inline-block;
+  /* buat supaya ditengah2 arah vertical content vertical_align:middle */
+  vertical-align: middle;
+}
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 90px);
+  text-align: right;
+  vertical-align: middle;
+}
+
+.main-header__brand {
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  color: #0e4f1f;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0px 16px;
+}
+
+.main-nav__item > a {
+  text-decoration: none;
+  color: #0e4f1f;
+  padding: 3px 0;
+}
+.main-nav__items {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  list-style: none;
+}
+/*
+.main-nav__item a::after {
+  jgn ada spasi di a:: (benar) salah: a ::  
+  content: " (Link) ";  otomatis nnti ada content tulisan link ditiap2 a link! 
+  color: red;
+} */
+
+/* .main-nav__item a:hover {
+  color: azure;
+}
+.main-nav__item a:active {
+  color: azure;
+  border: white 5px solid;
+} 
+
+dijadikan 1 group karena rule sama!
+kalau satu group maka  selector_a, selectorb  { property:value }
+*/
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: azure;
+  border-bottom: white 5px solid;
+}
+
+/* utk buat  a pada  item list ke -3 saja dikenai perubahan property value
+makanya harus ada 2nd class yg akan ubah a link 
+*/
+.main-nav__item--cta a {
+  color: white;
+  background: #ff1b68;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+/*  nah yg masaah stal buat main-nav__item--cta a diatas 
+ada conteont pseudo dari main-nav__item a:hover dan a:active yg masuh 
+terlihat utk itu pertlu direset dgn main-nav__item--cta a:hover /a:active
+maka kita kembalikan ke smula nilainya utk list item ke 3 ini 
+*/
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  border: none;
+  background: white;
+  color: #ff1b68;
+}
+
+/* 
+old tentan pseudo:
+contoh kita mau buat pseudo ekement utk fist letter 
+jadi fisr-letter pseudonya udah disediakan oleh css
+nah propeety  valuenya kita yg setting contoh dibawah ini
+ntar kita hapus jadi utk frst-letter ini kita akan buat 
+hurup awal dari sbuah paragrap menjadi besar dan berwarna putih 
+p::first-letter {
+  font-size:200%;
+  color:white}
+
+*/
+main > p::first-letter {
+  font-size: 40px;
+  color: red;
+}
+
+/* contoh lagi kita mau pake psudo element after di list-item 
+content::after {
+   content:" nama_content/ propertyapa yg diisiakn sbgai contnent  ";
+   property:value etc
+}
+*/
