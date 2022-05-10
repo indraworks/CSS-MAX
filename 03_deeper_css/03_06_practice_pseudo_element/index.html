@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_0306.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <h2>Practice pseudo element</h2>
+    <ul>
+      <li>Buy Milk</li>
+      <li>Take The Dog</li>
+      <li>Exercise</li>
+      <li>Write Code</li>
+      <li>Play Music</li>
+      <li>Relax</li>
+    </ul>
+    <script>
+      var list = document.querySelector("ul")
+      list.addEventListener(
+        "click",
+        function (ev) {
+          if (ev.target.tagName === "LI") {
+            /*tagname ngarah ke li tapi disebut dgn huruf besar patternnya  */
+            ev.target.classList.toggle("done")
+          }
+        },
+        false
+      )
+    </script>
+  </body>
+</html>

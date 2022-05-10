@@ -43,4 +43,7 @@ contoh pseudo class  dgn tanda : nama_classnya  nama_pseudonya
     jadi utk pseudonya sendiri baik utk element dan class smua sudah disediakan oleh css nya nisa liat di document dan dan  dipraktekan
     coba utk pseudo element ::before  anda praktekan ada contohnya 
     https://developer.mozilla.org/en-US/docs/Web/CSS/::before
+
+    contoh2 buat latihan :
+    https://www.w3.org/wiki/CSS/Selectors/pseudo-elements/:first-letter#:~:text=The%20%3A%3Afirst%2Dletter%20pseudo,inline%20tables)%20on%20its%20line.
     
